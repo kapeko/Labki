@@ -1,0 +1,23 @@
+import random
+
+zestaw_1=[]
+x=int(input("Podaj liczbe"))
+y=int(input("Podaj liczbe 2 zestawu"))
+for i in range(x):
+    zestaw_1.append(random.randint(1,10))
+print(zestaw_1)
+
+zestaw_2=[]
+zestaw_2=[random.randint(1,15) for i in range(y)]
+print(zestaw_2)
+
+z=int(input("Podaj liczbe szukana z obu zestawow"))
+
+
+
+if z in zestaw_2 and zestaw_1:
+    print("Liczba znajduje sie w obu zestawach")
+elif z in zestaw_1:
+    print("Liczba znajduje sie w zestawie 1")
+elif z in zestaw_2:
+    print("Liczba znajduje sie w zestawie 2")
